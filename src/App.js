@@ -1,5 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-export default () => {
+import { getHomeList } from './services/api.js';
+
+export default function App() {
+	useEffect(() => {
+		const loadAll = async () => {
+			//Get all the list
+			let list = await getHomeList();
+			console.log(list);
+		};
+
+		loadAll();
+	}, []);
+
 	return <h1>Hello world!</h1>;
-};
+}
