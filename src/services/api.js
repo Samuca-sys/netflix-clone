@@ -82,3 +82,26 @@ export const getHomeList = async () => {
 		},
 	];
 };
+
+export const getMovieInfo = async (movieId, type) => {
+	let info = {};
+
+	if (movieId) {
+		switch (type) {
+			case 'movie':
+				info = basicFetch(
+					`/movie/${movieId}?language=${language}&api_key=${apiKey}`
+				);
+				break;
+			case 'tv':
+				info = basicFetch(
+					`/tv/${movieId}?language=${language}&api_key=${apiKey}`
+				);
+				break;
+			default:
+				info = null;
+				break;
+		}
+	}
+	return info;
+};
