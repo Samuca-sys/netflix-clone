@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { MovieRow } from './components/MovieRow';
-import { FeaturedMovie } from './components/FeaturedMovie.js';
+import { FeaturedMovie } from './components/FeaturedMovie';
 
 import { getHomeList, getMovieInfo } from './services/api.js';
 
@@ -25,7 +25,6 @@ export default function App() {
 			let chosen = originals[0].items.results[randomChosen];
 			let chosenInfo = await getMovieInfo(chosen.id, 'tv');
 			setFeaturedData(chosenInfo);
-			console.log(chosenInfo);
 		};
 
 		loadAll();
