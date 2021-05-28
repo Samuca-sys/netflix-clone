@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import './styles.css';
 import { MdNavigateNext, MdNavigateBefore } from 'react-icons/md';
 export function MovieRow({ title, items }) {
-	const [scrollX, setScrollX] = useState(-400);
-	const [displayLeft, setDisplayLeft] = useState('flex');
+	const [scrollX, setScrollX] = useState(0);
+	const [displayLeft, setDisplayLeft] = useState('none');
 	const [displayRight, setDisplayRight] = useState('flex');
 
 	const handleLeftArrow = () => {
 		let x = scrollX + Math.round(window.innerWidth / 2);
-		if (x > 0) {
+		if (x >= 0) {
 			x = 0;
 			setDisplayLeft('none');
 		}
