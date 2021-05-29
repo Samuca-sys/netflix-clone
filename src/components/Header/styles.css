@@ -10,11 +10,12 @@ header {
 	align-items: center;
 	padding: 0 2rem;
 	background: transparent;
-	transition: all ease 0.2s;
+	transition: all ease 0.7s;
+	width: 100%;
 }
 
 header.black {
-	background-color: #141414;
+	background: var(--gray-400);
 }
 
 .header--logo {

@@ -2,7 +2,7 @@ footer {
 	width: 100%;
 	margin-top: 5rem;
 	display: grid;
-	color: #807667;
+	color: var(--gray-200);
 }
 .footer--icons {
 	margin-right: 1rem;
@@ -12,7 +12,7 @@ footer {
 .footer--icons a:visited,
 .footer--icons a:hover,
 .footer--icons a:active {
-	color: #807667;
+	color: var(--gray-200);
 }
 .footer--icons svg {
 	margin-right: 1.5rem;
@@ -21,20 +21,16 @@ footer {
 
 .footer--info {
 	margin: 0 auto;
-	font-size: 0.9rem;
 }
 
 .footer--info p {
 	margin: 1rem 0;
 }
-/* .footer--info:last-child {
-	margin: 12rem 0;
-} */
 
 .footer--info p a:link,
 .footer--info p a:visited,
 .footer--info p a:active {
-	color: #807667;
+	color: var(--gray-200);
 	text-decoration: none;
 }
 .footer--info p a:hover {
@@ -52,7 +48,7 @@ footer {
 
 .footer--list ul {
 	list-style: none;
-	color: #807667;
+	color: var(--gray-200);
 }
 
 .footer--list li {
@@ -62,4 +58,17 @@ footer {
 .footer--list span:hover {
 	width: 100%;
 	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	footer p,
+	footer span {
+		font-size: 0.75rem;
+	}
+	.footer--info {
+		margin-left: 2rem;
+	}
+	.footer--list {
+		grid-template-columns: repeat(2, 150px);
+	}
 }

@@ -3,9 +3,19 @@
 	margin: 0;
 	padding: 0;
 }
+:root {
+	--green: #46d369;
+	--white: #fff;
+	--gray-100: #999;
+	--gray-200: #807667;
+	--gray-300: #333;
+	--gray-400: #141414;
+	--gray-500: #111;
+	--black: #000;
+}
 body {
-	background-color: #111;
-	color: #fff;
+	background: var(--gray-500);
+	color: var(--white);
 	font-family: 'Roboto', sans-serif;
 }
 .lists {
@@ -19,8 +29,17 @@ body {
 	right: 0;
 	bottom: 0;
 	z-index: 999;
-	background: #000;
+	background: var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	* {
+		font-size: 83.75%;
+	}
+	.page {
+		overflow: hidden;
+	}
 }
