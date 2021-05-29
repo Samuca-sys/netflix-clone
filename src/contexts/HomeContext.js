@@ -16,7 +16,6 @@ export function HomeContextProvider({ children }) {
 				//Get all the list
 				let list = await getHomeList();
 				setMovieList(list);
-				console.log(list);
 
 				//Get Feature data
 				let originals = list.filter((item) => item.slug === 'originals');
@@ -28,7 +27,6 @@ export function HomeContextProvider({ children }) {
 
 				setFeaturedData(chosenInfo);
 				setIsLoading(false);
-				console.log(chosenInfo, isLoading);
 			} catch (error) {
 				console.log(error, 'Error getting home data');
 			}
