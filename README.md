@@ -35,7 +35,7 @@ This project was developed using front-end technology and API from Marvel.
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/Samuca-sys/nextflix-clone.git && cd netflix-clone
+$ git clone https://github.com/Samuca-sys/netflix-clone.git && cd netflix-clone
 ```
 
 **Follow the steps below**
