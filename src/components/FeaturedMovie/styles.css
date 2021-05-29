@@ -87,7 +87,7 @@ a.featured--myListButton button:hover {
 
 p.featured--genres,
 .featured--genres strong {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {
